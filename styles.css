@@ -48,30 +48,45 @@ header nav ul li a {
     text-align: center;
 }
 
-#productos .carousel {
+#productos .productos-container {
     display: flex;
     justify-content: center;
     gap: 20px;
-    overflow: hidden;
+    flex-wrap: wrap;
 }
 
-#productos .carousel-item {
-    width: 200px;
+#productos .producto-card {
+    width: 250px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
     text-align: center;
-    transition: transform 0.5s ease-in-out;
 }
 
-#productos .carousel-item img {
+#productos .producto-card img {
     width: 100%;
     border-radius: 5px;
 }
 
-#productos .carousel-item p {
+#productos .producto-card h3 {
     margin-top: 10px;
 }
 
+#productos .producto-card p {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#productos .producto-card a {
+    display: block;
+    margin-top: 10px;
+    color: #0073e6;
+    text-decoration: none;
+}
+
 /* Fichas Técnicas */
-#ficha1, #ficha2, #ficha3 {
+section[id^="ficha"] {
     padding: 20px;
     background-color: #fff;
     margin: 20px;
@@ -128,4 +143,5 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
 
