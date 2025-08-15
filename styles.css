@@ -52,16 +52,31 @@ header nav ul li a {
     display: flex;
     justify-content: center;
     gap: 20px;
+    overflow: hidden;
 }
 
 #productos .carousel-item {
     width: 200px;
     text-align: center;
+    transition: transform 0.5s ease-in-out;
 }
 
 #productos .carousel-item img {
     width: 100%;
     border-radius: 5px;
+}
+
+#productos .carousel-item p {
+    margin-top: 10px;
+}
+
+/* Fichas Técnicas */
+#ficha1, #ficha2, #ficha3 {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Categorías */
@@ -113,3 +128,4 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
